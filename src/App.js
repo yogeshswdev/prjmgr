@@ -8,7 +8,11 @@ class App extends Component {
 	constructor(){
 	super();
 		this.state = {
-		project: [
+		project: []		
+	}
+	}
+	componentWillMount(){
+		this.setState({project: [
 		{
 			title: 'Business Website',
 			category: 'Web design'			
@@ -16,9 +20,12 @@ class App extends Component {
 		{
 			title: 'Office Website',
 			category: 'office design'				
+		}		
+		]
 		}
-      ]		
-	}
+		
+		)
+		
 	}
   render() {
 	  console.info('h1');
